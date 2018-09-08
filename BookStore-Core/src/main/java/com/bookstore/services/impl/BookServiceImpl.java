@@ -7,7 +7,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
-import java.util.UUID;
 import java.util.stream.IntStream;
 import javax.validation.constraints.NotNull;
 import org.springframework.stereotype.Service;
@@ -21,11 +20,12 @@ public class BookServiceImpl implements BookService {
   {
     IntStream.range(1, 11)
         .mapToObj(i ->
-            Book.builder()
-                .id(UUID.randomUUID().toString())
-                .description("Book Description: " + i)
-                .title("Book " + i)
-                .build()
+            new Book(
+                Integer.toString(i),
+                "Book " + i,
+                2018,
+                "Book Description: " + i
+            )
         ).forEach(book -> books.put(book.getId(), book));
   }
 
