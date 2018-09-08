@@ -1,6 +1,7 @@
-package com.bookstore.services;
+package com.bookstore.services.impl;
 
 import com.bookstore.model.Book;
+import com.bookstore.services.BookService;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;

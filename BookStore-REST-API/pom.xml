@@ -11,5 +11,11 @@
 
   <artifactId>BookStore-REST-API</artifactId>
 
+  <dependencies>
+    <dependency>
+      <groupId>com.bookstore</groupId>
+      <artifactId>BookStore-Core</artifactId>
+    </dependency>
+  </dependencies>
 
 </project>

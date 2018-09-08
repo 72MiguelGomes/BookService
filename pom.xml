@@ -56,6 +56,18 @@
         <artifactId>lombok</artifactId>
         <version>${lombok.version}</version>
       </dependency>
+
+      <!-- Internal Modules -->
+      <dependency>
+        <groupId>com.bookstore</groupId>
+        <artifactId>BookStore-Core</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.bookstore</groupId>
+        <artifactId>BookStore-REST-API</artifactId>
+        <version>${project.version}</version>
+      </dependency>
     </dependencies>
   </dependencyManagement>
 
