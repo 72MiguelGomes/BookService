@@ -4,13 +4,13 @@ import java.time.LocalDate;
 
 public class Author {
 
-  private String id;
+  private final String id;
 
-  private String firstName;
+  private final String firstName;
 
-  private String lastName;
+  private final String lastName;
 
-  private LocalDate birthday;
+  private final LocalDate birthday;
 
   public Author(String id, String firstName, String lastName, LocalDate birthday) {
     this.id = id;

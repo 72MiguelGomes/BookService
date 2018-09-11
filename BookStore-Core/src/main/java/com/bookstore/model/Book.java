@@ -1,20 +1,26 @@
 package com.bookstore.model;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class Book {
 
-  private String id;
+  private final String id;
 
-  private String title;
+  private final String title;
 
-  private int year;
+  private final int year;
 
-  private String description;
+  private final String description;
 
-  public Book(String id, String title, int year, String description) {
+  private final Set<Author> authors;
+
+  public Book(String id, String title, int year, String description, Set<Author> authors) {
     this.id = id;
     this.title = title;
     this.year = year;
     this.description = description;
+    this.authors = authors;
   }
 
   public String getId() {
@@ -31,5 +37,9 @@ public class Book {
 
   public String getDescription() {
     return description;
+  }
+
+  public Set<Author> getAuthors() {
+    return new HashSet<>(authors);
   }
 }
